@@ -106,7 +106,10 @@ function App() {
                 );
               })}
             </List>
-            <Grid container justifyContent="center" style={{ marginTop: '20px' }}>
+            <Grid container direction="column" alignItems="center" style={{ marginTop: '20px' }}>
+              <Typography variant="body2" style={{ marginBottom: '8px', color: '#FFFFFF', fontFamily: "'Roboto', sans-serif" }}>
+                Use your WMSU email for the submission of decrypted message.
+              </Typography>
               <Button
                 variant="outlined"
                 style={{
@@ -126,13 +129,13 @@ function App() {
                   }
                 }}
                 onClick={() => {
-                  window.open('https://github.com', '_blank');
+                  window.open('https://forms.gle/ccMvUp2hXXgwUuW39', '_blank');
                 }}
               >
                 Submit
               </Button>
-
             </Grid>
+
           </Box>
 
           <Typography variant="body2" align="center" style={{ marginTop: '20px', color: '#888' }}>
